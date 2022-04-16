@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int num,con,max1,max2;
+   bool res=true;
+   for (int x=0;x<5;x++)
+   {
+      cin>>num;
+       if(x==0)
+       {
+           max1=num;
+
+       }else
+       {
+           if(num>max1)
+           {
+               max2=max1;
+
+               max1=num;
+
+               }
+           }
+       }
+       cout<<"los dos valores mayores son: "<<max2<<" y "<<max1<<endl;
+
+ return 0;
+       }
+      

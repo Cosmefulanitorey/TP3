@@ -1,0 +1,41 @@
+int main()
+{
+    int i,dia,num_venta,dia_maxrec;
+    float monto_venta,rec_dia[5]= {},max_rec ;
+    
+  
+    cout<<"Ingrese numero de venta"<<endl;
+    cin>>num_venta;
+    while (num_venta!=0)
+    {
+
+
+        cout<<"Ingrese dia de venta"<<endl;
+        cin>>dia;
+
+        cout<<"ingrese monto de venta"<<endl;
+        cin>>monto_venta;
+        rec_dia[dia]+=monto_venta;
+        cout<<"Ingrese numero de venta"<<endl;
+        cin>>num_venta;
+    }
+    max_rec=rec_dia[0];
+    for(i=0; i<5; i++)
+    {
+        if(rec_dia[i]=!0)
+        {
+
+            cout<<"La recaudacion del dia "<<i+1<<" es de $ "<<rec_dia<<endl;
+        }
+        if (max_rec<rec_dia[i])
+        {
+            max_rec=rec_dia[i];
+            dia_maxrec=i;
+        }
+
+    }
+    cout<<"El dia que mayor recaudacion tuvo el negocio fue el "<<dia_maxrec<<" en el cual se recaudo $"<<max_rec<<endl;
+
+    return 0;
+
+}
